@@ -1,6 +1,6 @@
 # Simple Portfolio
 
-Welcome to the **Project Name** repository! This project does [brief description of what the project does]. Follow the steps below to get it up and running on your local machine.
+Welcome to the **Simple Portfolio** repository! Follow the steps below to get it up and running on your local machine.
 
 ## Getting Started
 
@@ -47,7 +47,7 @@ node -v
 
 ### Usage
 
-Once started, the application will be accessible at `http://localhost:3000` (or another specified port if configured). Make sure to follow any additional usage instructions relevant to the project.
+Once started, the application will be accessible on localhost. Make sure to follow any additional usage instructions relevant to the project.
 
 ## Support
 
