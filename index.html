@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <script>
+        // Script to toggle dark mode
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+</head>
+
+<body class="bg-background dark:bg-darkBackground text-gray-900 dark:text-gray-100">
+    <header class="bg-primary dark:bg-darkPrimary text-white p-6 flex justify-between items-center">
+        <h1 class="text-4xl font-bold">My Portfolio</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:underline">About</a></li>
+                <li><a href="#projects" class="hover:underline">Projects</a></li>
+                <li><a href="#skills" class="hover:underline">Skills</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleDarkMode()" class="ml-4 bg-secondary dark:bg-darkSecondary text-white px-4 py-2 rounded">
+      Toggle Dark Mode
+    </button>
+    </header>
+
+    <section class="bg-primary dark:bg-darkPrimary text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-xl mb-8">Showcasing my skills and projects</p>
+            <a href="#contact" class="bg-white text-primary dark:text-darkPrimary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Get in Touch</a>
+        </div>
+    </section>
+
+    <main class="p-8">
+        <section id="about" class="my-16">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <p class="text-center text-lg max-w-2xl mx-auto">I am an experienced developer with a passion for creating beautiful and functional web applications. My expertise lies in front-end development, and I am always eager to learn and implement new technologies.</p>
+        </section>
+
+        <section id="projects" class="my-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">Project 1</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">Description of project 1.</p>
+                    <a href="#" class="text-primary dark:text-darkPrimary hover:underline">Learn more</a>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">Project 2</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">Description of project 2.</p>
+                    <a href="#" class="text-primary dark:text-darkPrimary hover:underline">Learn more</a>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">Project 3</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">Description of project 2.</p>
+                    <a href="#" class="text-primary dark:text-darkPrimary hover:underline">Learn more</a>
+                </div>
+                <!-- Repeat for other projects -->
+            </div>
+        </section>
+
+        <section id="skills" class="my-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="w-1/4 text-center">
+                    <div class="text-4xl mb-2">💻</div>
+                    <h3 class="text-xl font-semibold">HTML</h3>
+                    <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-2">
+                        <div class="bg-primary dark:bg-darkPrimary h-2 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="w-1/4 text-center">
+                    <div class="text-4xl mb-2">⚛️</div>
+                    <h3 class="text-xl font-semibold">React</h3>
+                    <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-2">
+                        <div class="bg-primary dark:bg-darkPrimary h-2 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="w-1/4 text-center">
+                    <div class="text-4xl mb-2">🧑‍💻</div>
+                    <h3 class="text-xl font-semibold">Javascript</h3>
+                    <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-2">
+                        <div class="bg-primary dark:bg-darkPrimary h-2 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <!-- Repeat for other skills -->
+            </div>
+        </section>
+
+        <section id="contact" class="my-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact</h2>
+            <form class="max-w-lg mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+                <input type="text" placeholder="Your Name" class="border border-gray-300 dark:border-gray-600 p-3 w-full mb-4 rounded" required>
+                <input type="email" placeholder="Your Email" class="border border-gray-300 dark:border-gray-600 p-3 w-full mb-4 rounded" required>
+                <textarea placeholder="Your Message" class="border border-gray-300 dark:border-gray-600 p-3 w-full mb-4 rounded" required></textarea>
+                <button type="submit" class="bg-secondary dark:bg-darkSecondary text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-600 transition">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-primary dark:bg-darkPrimary text-white p-6 text-center">
+        <p class="mb-4">&copy; 2023 Made with love by Oualid</p>
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-github"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
